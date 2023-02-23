@@ -1,0 +1,133 @@
+.navbar {
+    background-color: rgb(0, 0, 50);
+    color: white;
+    height: auto;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: block;
+}
+
+header img {
+    float: left
+}
+
+body {
+    background-color: blueviolet;
+    width: 100%;
+    height: 720%;
+}
+
+.navbar-brand {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(73, 190, 249);
+    padding-left: 17px;
+}
+
+.logo-img {
+    margin-top: 3%;
+    width: 52px;
+    height: 55px;
+    border-radius: 40%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+
+.navbar-nav1 {
+    flex-direction: row;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.btn1 {
+    border: 2px solid white;
+}
+
+.btn1:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:700px) {
+    .navbar .container-fluid {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .container-fluid div a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
+}
+
+.box>img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box>span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover {
+    flex: 1 1 50%;
+}
+
+.box:hover>img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    height: 58px;
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: rgb(0, 0, 50);
+    display: block;
+    padding: 10px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
